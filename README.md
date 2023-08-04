@@ -41,12 +41,11 @@ Animations are run using an [Arduino Nano](https://store.arduino.cc/products/ard
 [![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus)](https://cplusplus.com/)
 
 ## Demo
-
 Video of what it looks like: https://www.youtube.com/watch?v=4pzxR-ZhbJA
 
 **Disclaimer:** I did not create the video but it is made using the same idea
 
 ## License
-Copyright © 2023 Zakary Timson | All Rights Reserved
+Copyright © 2023 Zakary Timson | Available under MIT Licensing
 
 See the [license](./LICENSE) for more information.
