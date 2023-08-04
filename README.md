@@ -30,9 +30,9 @@
 <br />
 <br />
 
-This repo contains code for running a 4x4x4 (64 total) [multiplexed](https://en.wikipedia.org/wiki/Multiplexing) LED cube.
+This repo contains code for running a 4x4x4 (64 total) LED cube. It uses [multiplexing](https://en.wikipedia.org/wiki/Multiplexing) to control all 64 LEDs using only 20 inputs (4 layers + 16 columns).
 
-4 LED's are wired into columns using their annode. 16 columns are then wired together creating the cube, connecting each layer (16 LEDs) together by their cathode. By keeping each layer & column disconnected, individual LED's can be toggled on by connecting the desired column & layer. Multiple LEDs can be turned on at once by individually blinking each LED faster than the eye can see. By rendering multiple "frames" in quick succession patterns can be created on the cube.
+4 LED's are wired into columns using their annode. 16 columns are then wired together in a 4x4 square creating a cube. Each vetical layer has its 16 LED cathodes wired together into a plane. By keeping all inputs disconnected, individual LED's can be turned on by connecting the desired column & layer to the positive and negative respectively providing only one complete path for the electricy to follow. Multiple LEDs can be turned on at once by individually blinking each LED faster than the eye can see. By doing this to render multiple "frames" small animations can be created.
 
 Animations are run using an [Arduino Nano](https://store.arduino.cc/products/arduino-nano).
 
