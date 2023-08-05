@@ -12,7 +12,7 @@
   Animated 4x4x4 LED cube
 
   <!-- Repo badges -->
-   [![Version](https://img.shields.io/badge/dynamic/json.svg?label=Version&style=for-the-badge&url=https://git.zakscode.com/api/v1/repos/ztimson/AnimatedCube/tags&query=$[0].name)](https://git.zakscode.com/ztimson/AnimatedCube/tags)
+  [![Version](https://img.shields.io/badge/dynamic/json.svg?label=Version&style=for-the-badge&url=https://git.zakscode.com/api/v1/repos/ztimson/AnimatedCube/tags&query=$[0].name)](https://git.zakscode.com/ztimson/AnimatedCube/tags)
   [![Pull Requests](https://img.shields.io/badge/dynamic/json.svg?label=Pull%20Requests&style=for-the-badge&url=https://git.zakscode.com/api/v1/repos/ztimson/AnimatedCube&query=open_pr_counter)](https://git.zakscode.com/ztimson/AnimatedCube/pulls)
 
 </div>
