@@ -12,7 +12,8 @@
   Animated 4x4x4 LED cube
 
   <!-- Repo badges -->
-  [![Pull Requests](https://img.shields.io/badge/dynamic/json.svg?label=Pull%20Requests&style=for-the-badge&url=https://git.zakscode.com/api/v1/repos/ztimson/291st&query=open_pr_counter)](https://git.zakscode.com/ztimson/291st/pulls)
+   [![Version](https://img.shields.io/badge/dynamic/json.svg?label=Version&style=for-the-badge&url=https://git.zakscode.com/api/v1/repos/ztimson/AnimatedCube/tags&query=$[0].name)](https://git.zakscode.com/ztimson/AnimatedCube/tags)
+  [![Pull Requests](https://img.shields.io/badge/dynamic/json.svg?label=Pull%20Requests&style=for-the-badge&url=https://git.zakscode.com/api/v1/repos/ztimson/AnimatedCube&query=open_pr_counter)](https://git.zakscode.com/ztimson/AnimatedCube/pulls)
 
 </div>
 
@@ -43,7 +44,7 @@ Animations are run using an [Arduino Nano](https://store.arduino.cc/products/ard
 ## Demo
 Video of what it looks like: https://www.youtube.com/watch?v=4pzxR-ZhbJA
 
-**Disclaimer:** I did not create the video but it is made using the same idea
+<ins>**Disclaimer:** I did not create the video but it is made using the same idea</ins>
 
 ## License
 Copyright © 2023 Zakary Timson | Available under MIT Licensing
