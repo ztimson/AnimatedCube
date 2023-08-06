@@ -5,7 +5,7 @@ jobs:
   first:
     name: Step One
     runs-on: ubuntu-latest
-    container: node:latest
+    container:
       image: node:latest
       volumes:
         - ${{github.workspace}}:/app
@@ -17,7 +17,7 @@ jobs:
     name: Step One
     needs: first
     runs-on: ubuntu-latest
-    container: node:latest
+    container:
       image: node:latest
       volumes:
         - ${{github.workspace}}:/root
