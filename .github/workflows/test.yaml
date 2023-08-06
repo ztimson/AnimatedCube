@@ -8,9 +8,9 @@ jobs:
     container:
       image: node:latest
       volumes:
-        - ${{github.workspace}}:/app
+        - ${{github.workspace}}:${{github.workspace}}
     steps:
-      - run: cd /app
+      - run: pwd
       - uses: actions/checkout@v3
       - run: ls
   second:
@@ -20,6 +20,6 @@ jobs:
     container:
       image: node:latest
       volumes:
-        - ${{github.workspace}}:/root
+        - ${{github.workspace}}:${{github.workspace}}
     steps:
       - run: ls
