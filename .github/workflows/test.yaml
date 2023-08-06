@@ -6,13 +6,13 @@ jobs:
     name: Step One
     runs-on: ubuntu-latest
     steps:
-      run: ls
-      run: touch test.txt
-      run: ls
+      - run: ls
+      - run: touch test.txt
+      - run: ls
 
   second:
     name: Step Two
     needs: first
     runs-on: ubuntu-latest
     steps:
-      run: ls
+      - run: ls
