@@ -2,16 +2,17 @@ name: Workflow Test
 on: push
 
 jobs:
-	first:
-		name: Step One
-		runs-on: ubuntu-latest
-		steps:
-			run: ls
-		    run: touch test.txt
-			run: ls
-	second:
-		name: Step Two
-		needs: first
-		runs-on: ubuntu-latest
-		steps:
-			run: ls
+  first:
+    name: Step One
+    runs-on: ubuntu-latest
+    steps:
+      run: ls
+      run: touch test.txt
+      run: ls
+
+  second:
+    name: Step Two
+    needs: first
+    runs-on: ubuntu-latest
+    steps:
+      run: ls
