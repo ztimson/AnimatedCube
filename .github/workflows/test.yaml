@@ -5,9 +5,20 @@ jobs:
   first:
     name: Step One
     runs-on: ubuntu-latest
-    container: ubuntu:latest
+    container: node:latest
+      image: node:latest
+      volumes:
+        - ${{github.workspace}}:/root
     steps:
       - uses: actions/checkout@v3
       - run: ls
-      - run: touch test.txt
+  second:
+    name: Step One
+	needs: first
+    runs-on: ubuntu-latest
+    container: node:latest
+      image: node:latest
+      volumes:
+        - ${{github.workspace}}:/root
+    steps:
       - run: ls
