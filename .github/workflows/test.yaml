@@ -5,7 +5,7 @@ jobs:
   first:
     name: Step One
     runs-on: ubuntu-latest
-	container: ubuntu:latest
+    container: ubuntu:latest
     steps:
       - run: ls
       - run: touch test.txt
