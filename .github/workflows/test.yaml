@@ -8,13 +8,14 @@ jobs:
     container: node:latest
       image: node:latest
       volumes:
-        - ${{github.workspace}}:/root
+        - ${{github.workspace}}:/app
     steps:
+      - run: cd /app
       - uses: actions/checkout@v3
       - run: ls
   second:
     name: Step One
-	needs: first
+    needs: first
     runs-on: ubuntu-latest
     container: node:latest
       image: node:latest
