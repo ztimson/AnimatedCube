@@ -5,21 +5,7 @@ jobs:
   first:
     name: Step One
     runs-on: ubuntu-latest
-    container:
-      image: node:latest
-      volumes:
-        - ${{github.workspace}}:${{github.workspace}}
+    container: alpine/git
     steps:
       - run: pwd
-      - uses: actions/checkout@v3
-      - run: ls
-  second:
-    name: Step One
-    needs: first
-    runs-on: ubuntu-latest
-    container:
-      image: node:latest
-      volumes:
-        - ${{github.workspace}}:${{github.workspace}}
-    steps:
       - run: ls
