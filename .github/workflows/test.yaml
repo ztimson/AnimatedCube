@@ -3,6 +3,6 @@ on: push
 
 jobs:
   tag:
-    uses: ztimson/actions/workflows/tag.yaml
+    uses: ztimson/actions/workflows/tag.yaml@develop
     with:
       branch: develop
