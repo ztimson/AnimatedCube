@@ -5,7 +5,6 @@ jobs:
   first:
     name: Step One
     runs-on: ubuntu-latest
-    container: alpine/git
     steps:
       - run: echo "${{GITHUB_SERVER_URL}}"
       - run: |
