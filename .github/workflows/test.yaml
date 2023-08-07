@@ -6,5 +6,5 @@ jobs:
     name: Step One
     runs-on: ubuntu-latest
     steps:
-      - uses: git.zakscode.com/ztimson/actions/git/checkout@develop
+      - uses: ztimson/actions/git/checkout@develop
       - run: ls
