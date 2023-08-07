@@ -6,4 +6,4 @@ jobs:
     name: Step One
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{GITHUB_SERVER_URL}}"
+      - run: echo "$GITHUB_SERVER_URL"
