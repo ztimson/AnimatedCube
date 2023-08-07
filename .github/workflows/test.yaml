@@ -7,7 +7,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{GITHUB_SERVER_URL}}"
-      - run: |
-          URL=$(echo "${{GITHUB_SERVER_URL}}" | sed 's%://%${{GITHUB_TOKEN}}@://%')
-          echo "$URL/${{GITHUB_REPOSITORY}}"
-      - run: ls
