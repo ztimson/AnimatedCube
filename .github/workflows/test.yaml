@@ -2,7 +2,10 @@ name: Workflow Test
 on: push
 
 jobs:
-  tag:
-    uses: ztimson/actions/workflows/tag.yaml@develop
-    with:
-      branch: develop
+  first:
+    name: Step One
+    if: $GITHUB_REF_NAME == 'develop'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ztimson/actions/git/checkout@develop
+      - uses: ztimson/actions/git/tag@develop
