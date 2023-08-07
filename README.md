@@ -19,10 +19,10 @@
 
 ## Table of Contents
 - [Animated Cube](#top)
-- [About](#about)
-  - [Built With](#built-with)
-- [Demo](#demo)
-- [License](#license)
+  - [About](#about)
+    - [Built With](#built-with)
+  - [Demo](#demo)
+  - [License](#license)
 
 ## About
 
