@@ -8,3 +8,4 @@ jobs:
     steps:
       - uses: ztimson/actions/git/checkout@develop
       - run: ls
+      - uses: ztimson/actions/git/tag@develop
