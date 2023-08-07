@@ -2,10 +2,7 @@ name: Workflow Test
 on: push
 
 jobs:
-  first:
-    name: Step One
-    runs-on: ubuntu-latest
-    steps:
-      - uses: ztimson/actions/git/checkout@develop
-      - run: ls
-      - uses: ztimson/actions/git/tag@develop
+  tag:
+    uses: ztimson/actions/workflows/tag.yaml
+    with:
+      branch: develop
