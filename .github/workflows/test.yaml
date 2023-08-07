@@ -4,7 +4,7 @@ on: push
 jobs:
   first:
     name: Step One
-    if: ${{ GITHUB_REF_NAME }} == 'develop'
+    if: "$GITHUB_REF_NAME" == "develop"
     runs-on: ubuntu-latest
     steps:
       - uses: ztimson/actions/git/checkout@develop
