@@ -7,5 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     container: alpine/git
     steps:
-      - run: pwd
+      - run: |
+          URL=$(echo "${{GITHUB_SERVER_URL}}" | sed 's%://%${{GITHUB_TOKEN}}@://%')
+          git clone "$URL/${{GITHUB_REPOSITORY}}"
+          git switch ${{GITHUB_REF}}
       - run: ls
