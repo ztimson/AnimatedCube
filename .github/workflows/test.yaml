@@ -4,6 +4,7 @@ on: push
 jobs:
   first:
     name: Step One
+    if: github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     steps:
       - uses: ztimson/actions/git/checkout@develop
