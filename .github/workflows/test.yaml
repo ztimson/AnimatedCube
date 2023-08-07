@@ -9,6 +9,6 @@ jobs:
     steps:
       - run: echo "$GITHUB_SERVER_URL"
       - run: |
-          HOST=$(echo "$GITHUB_SERVER_URL" | sed 's%https?://%%')
+          HOST=$(echo "$GITHUB_SERVER_URL" | sed 's%https://%%')
           echo "$HOST"
       - run: ls
