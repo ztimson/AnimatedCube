@@ -10,5 +10,6 @@ jobs:
       - run: echo "$GITHUB_SERVER_URL"
       - run: |
           HOST=$(echo "$GITHUB_SERVER_URL" | sed 's%https://%%')
-          echo "https://$GITHUB_TOKEN@$HOST/$GITHUB_REPOSITORY.git"
+          URL="https://$GITHUB_TOKEN@$HOST/$GITHUB_REPOSITORY.git"
+		  git clone "$URL" .
       - run: ls
