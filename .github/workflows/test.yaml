@@ -9,8 +9,6 @@ jobs:
     steps:
       - run: echo "$GITHUB_SERVER_URL"
       - run: |
-          URL=$(echo "$GITHUB_SERVER_URL" | sed 's%://%$GITHUB_TOKEN@://%')
-          echo "$URL/$GITHUB_REPOSITORY.git"
-          git clone "$URL/$GITHUB_REPOSITORY.git"
-          git switch $GITHUB_REF
+          HOST=$(echo "$GITHUB_SERVER_URL" | sed 's%https?://%%')
+          echo "https://test@$HOST/${{ GITHUB_REPOSITORY }}.git"
       - run: ls
