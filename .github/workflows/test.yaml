@@ -10,5 +10,5 @@ jobs:
       - run: echo "$GITHUB_SERVER_URL"
       - run: |
           HOST=$(echo "$GITHUB_SERVER_URL" | sed 's%https://%%')
-          echo "https://test@$HOST/.git"
+          echo "https://test@$HOST/$GITHUB_REPOSITORY.git"
       - run: ls
